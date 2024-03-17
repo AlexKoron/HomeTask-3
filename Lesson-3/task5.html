@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Завдання 5</h1>
+   <p>
+      5.	З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+    </p>
+   <script>
+   const category = prompt('Категорія')
+   let vehicle
+   switch (category.toUpperCase()) //повертаєм значення букви у верхній реєстр
+   {
+     case 'A':
+     vehicle = 'Мотоцикл'
+       break
+     case 'B':
+     vehicle = 'Легковий'
+       break
+     case 'C':
+     vehicle = 'Вантажівка'
+       break
+     default:
+     vehicle= 'Невідомий транспорт'
+       break
+   }
+   document.write(vehicle)
+   </script>
+</body>
+</html>
